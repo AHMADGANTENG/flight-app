@@ -26,3 +26,9 @@ Flight::route( '/logout', function(){
 
 	Flight::redirect( '/login' );
 });
+
+
+
+Flight::route( 'GET /users/edit/@username', function($username){
+    echo $username;
+});
